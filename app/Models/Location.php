@@ -10,6 +10,11 @@ class Location extends Model
 {
     use HasFactory;
 
+     /**
+     * This function defines a one-to-many relationship, where a single location
+     * can have many transactions.
+     */
+
     public function transactions()
     {
         return $this->hasMany(Transaction::class);

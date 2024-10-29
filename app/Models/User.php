@@ -43,6 +43,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    /**
+     * Get all transaction for the user.
+     *
+     * This function defines a one-to-many relationship, where a single user
+     * can have many transactions.
+     */
     public function transactions()
     {
         return $this->hasMany(Transaction::class);
