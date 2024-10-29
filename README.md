@@ -26,6 +26,7 @@ Brief description of your project, what it does, and its key features.
 
 ## Configuration
 
+```bash
 cd your-project-name
 composer install
 npm install
